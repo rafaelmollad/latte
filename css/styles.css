@@ -10,17 +10,12 @@ body {
 
 a {
   text-decoration: none;
-  color: floralwhite;
+  color: #fff;
   letter-spacing: 0.09rem;
 }
 
 li {
   list-style: none;
-}
-
-.container {
-  max-width: 80%;
-  margin: 0 auto;
 }
 
 .portada {
@@ -54,13 +49,6 @@ li {
 }
 .portada .logo i {
   padding-right: 0.2rem;
-  color: #ffdc00;
-}
-@media all and (min-width: 715px) {
-  .portada .header-container {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 .portada #nav-principal ul {
   display: flex;
@@ -72,15 +60,12 @@ li {
 .portada #nav-principal ul li:nth-child(2) {
   padding: 0 1rem;
 }
-.portada #nav-principal ul li:nth-child(3) a:hover {
-  color: aqua;
-}
 .portada #texto-portada {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: floralwhite;
+  color: #fff;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -99,18 +84,16 @@ li {
 .portada #texto-portada h2 {
   font-size: 4rem;
   margin-bottom: 3rem;
-  color: #ffdc00;
 }
 .portada #texto-portada a {
   padding: 1rem 2rem;
-  border: 3px solid floralwhite;
+  border: 3px solid #fff;
   font-size: 1.2rem;
   display: inline-block;
-  transition: all 0.5s ease;
 }
 .portada #texto-portada a:hover {
-  background: #000;
-  border-color: #000;
+  background: darkkhaki;
+  border-color: darkkhaki;
 }
 
 /*# sourceMappingURL=styles.css.map */

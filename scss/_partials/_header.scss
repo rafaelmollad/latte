@@ -1,0 +1,47 @@
+header {
+  padding-top: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  i {
+    padding-right: 0.2rem;
+    color: $yellow;
+  }
+}
+
+@media all and (min-width: 715px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#nav-principal {
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      font-size: 1.3rem;
+    }
+
+    li:nth-child(2) {
+      padding: 0 1rem;
+    }
+
+    li:nth-child(3) {
+      a {
+        &:hover {
+          color: $twitter;
+        }
+      }
+    }
+  }
+}
