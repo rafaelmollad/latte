@@ -16,7 +16,7 @@ header {
   }
 }
 
-@media all and (min-width: 715px) {
+@include tablet {
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -30,16 +30,22 @@ header {
 
     li {
       font-size: 1.3rem;
-    }
 
-    li:nth-child(2) {
-      padding: 0 1rem;
-    }
-
-    li:nth-child(3) {
       a {
         &:hover {
-          color: $twitter;
+          color: $yellow;
+        }
+      }
+
+      &:nth-child(2) {
+        padding: 0 1rem;
+      }
+
+      &:nth-child(3) {
+        a {
+          &:hover {
+            color: $twitter;
+          }
         }
       }
     }

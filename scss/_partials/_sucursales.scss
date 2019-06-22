@@ -1,0 +1,49 @@
+.sobre-nosotros {
+  background: $gray;
+  padding: 5rem 0;
+  text-align: center;
+
+  .sobre-nosotros-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  i {
+    color: $yellow;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: $yellow;
+  }
+
+  p {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+  }
+
+  @include tablet {
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 3.5rem;
+    }
+  }
+}
