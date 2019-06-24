@@ -1,0 +1,60 @@
+header {
+  padding-top: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  i {
+    padding-right: 0.2rem;
+    color: $yellow;
+  }
+}
+
+@include tablet {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+}
+
+#nav-principal {
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      font-size: 1.3rem;
+
+      a {
+        &:hover {
+          color: $yellow;
+        }
+      }
+
+      &:nth-child(2) {
+        padding: 0 1rem;
+      }
+
+      &:nth-child(3) {
+        a {
+          &:hover {
+            color: $twitter;
+          }
+        }
+      }
+    }
+  }
+}

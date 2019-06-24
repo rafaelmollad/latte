@@ -1,0 +1,55 @@
+.sucursales-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+
+  i {
+    font-size: 5rem;
+    color: $yellow;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.sucursales-container {
+  .sucursal {
+    position: relative;
+    text-align: center;
+
+    h2 {
+      position: absolute;
+      color: $white;
+      right: 0;
+      left: 0;
+      top: 50%;
+      font-size: 3rem;
+    }
+
+    @include tablet {
+      width: 100%;
+
+      img {
+        max-height: 550px;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  @include desktop {
+    display: flex;
+
+    .sucursal {
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

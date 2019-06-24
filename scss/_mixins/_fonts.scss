@@ -1,0 +1,14 @@
+$font-primary: "mochaMattari";
+
+@font-face {
+  font-family: $font-primary;
+  src: url("../fonts/mochaMattari.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/mochaMattari.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/mochaMattari.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/mochaMattari.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/mochaMattari.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/mochaMattari.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
+  font-weight: 400;
+}

@@ -1,0 +1,16 @@
+// Portada
+.portada {
+  background-image: url("../images/portada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 15rem 0;
+  position: relative;
+
+  // Header
+  @import "_header";
+
+  // Texto portada
+  @import "_texto-portada";
+}

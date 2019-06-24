@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "mochaMattari";
+  src: url("../fonts/mochaMattari.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/mochaMattari.eot?#iefix") format("embedded-opentype"), url("../fonts/mochaMattari.woff2") format("woff2"), url("../fonts/mochaMattari.woff") format("woff"), url("../fonts/mochaMattari.ttf") format("truetype"), url("../fonts/mochaMattari.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "mochaMattari";
+}
+
+a {
+  text-decoration: none;
+  color: floralwhite;
+  letter-spacing: 0.09rem;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+}
+
+@media all and (min-width: 715px) {
+  .container {
+    width: 80%;
+    padding: 0;
+  }
+}
+.portada {
+  background-image: url("../images/portada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 15rem 0;
+  position: relative;
+}
+.portada header {
+  padding-top: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.portada .logo {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.portada .logo i {
+  padding-right: 0.2rem;
+  color: #ffdc00;
+}
+@media all and (min-width: 715px) {
+  .portada .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .portada .logo {
+    margin-bottom: 0;
+  }
+}
+.portada #nav-principal ul {
+  display: flex;
+  justify-content: center;
+}
+.portada #nav-principal ul li {
+  font-size: 1.3rem;
+}
+.portada #nav-principal ul li a:hover {
+  color: #ffdc00;
+}
+.portada #nav-principal ul li:nth-child(2) {
+  padding: 0 1rem;
+}
+.portada #nav-principal ul li:nth-child(3) a:hover {
+  color: aqua;
+}
+.portada #texto-portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: floralwhite;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+.portada #texto-portada h1,
+.portada #texto-portada h2 {
+  letter-spacing: 0.2rem;
+}
+.portada #texto-portada h1 {
+  font-size: 3rem;
+}
+.portada #texto-portada h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #ffdc00;
+}
+.portada #texto-portada a {
+  padding: 1rem 2rem;
+  border: 3px solid floralwhite;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.portada #texto-portada a:hover {
+  background: #000;
+  border-color: #000;
+}
+
+.sobre-nosotros {
+  background: #dfe6e9;
+  padding: 5rem 0;
+  text-align: center;
+}
+.sobre-nosotros .sobre-nosotros-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobre-nosotros i {
+  color: #ffdc00;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.sobre-nosotros h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.sobre-nosotros h3 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #ffdc00;
+}
+.sobre-nosotros p {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+}
+@media all and (min-width: 715px) {
+  .sobre-nosotros p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .sobre-nosotros h2 {
+    font-size: 3rem;
+  }
+  .sobre-nosotros h3 {
+    font-size: 3.5rem;
+  }
+}
+
+.sucursales-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+.sucursales-texto i {
+  font-size: 5rem;
+  color: #ffdc00;
+  margin-bottom: 1rem;
+}
+.sucursales-texto h2 {
+  font-size: 3rem;
+}
+
+.sucursales-container .sucursal {
+  position: relative;
+  text-align: center;
+}
+.sucursales-container .sucursal h2 {
+  position: absolute;
+  color: floralwhite;
+  right: 0;
+  left: 0;
+  top: 50%;
+  font-size: 3rem;
+}
+@media all and (min-width: 715px) {
+  .sucursales-container .sucursal {
+    width: 100%;
+  }
+  .sucursales-container .sucursal img {
+    max-height: 550px;
+    object-fit: cover;
+  }
+  .sucursales-container .sucursal h2 {
+    font-size: 5rem;
+  }
+}
+@media all and (min-width: 1024px) {
+  .sucursales-container {
+    display: flex;
+  }
+  .sucursales-container .sucursal img {
+    height: 100%;
+  }
+}
+
+.footer-principal {
+  background: #000;
+  color: #fff;
+  padding: 5rem;
+  text-align: center;
+}
+@media all and (min-width: 715px) {
+  .footer-principal p {
+    font-size: 1.1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
