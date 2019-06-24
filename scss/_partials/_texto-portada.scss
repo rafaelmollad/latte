@@ -4,13 +4,9 @@
   align-items: center;
   justify-content: center;
   color: $white;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   text-align: center;
   z-index: 1;
+  position: relative;
 
   h1,
   h2 {
@@ -22,7 +18,7 @@
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
     color: $yellow;
   }

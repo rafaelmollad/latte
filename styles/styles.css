@@ -26,10 +26,23 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
 }
 
 @media all and (min-width: 715px) {
@@ -44,22 +57,15 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  padding: 15rem 0;
   position: relative;
-}
-.portada:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
 }
 .portada header {
   padding-top: 3rem;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .portada .logo {
   font-size: 2rem;
@@ -75,6 +81,10 @@ li {
   .portada .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  .portada .logo {
+    margin-bottom: 0;
   }
 }
 .portada #nav-principal ul {
@@ -99,13 +109,9 @@ li {
   align-items: center;
   justify-content: center;
   color: floralwhite;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   text-align: center;
   z-index: 1;
+  position: relative;
 }
 .portada #texto-portada h1,
 .portada #texto-portada h2 {
@@ -115,7 +121,7 @@ li {
   font-size: 3rem;
 }
 .portada #texto-portada h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
   color: #ffdc00;
 }
@@ -170,6 +176,66 @@ li {
   }
   .sobre-nosotros h3 {
     font-size: 3.5rem;
+  }
+}
+
+.sucursales-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+.sucursales-texto i {
+  font-size: 5rem;
+  color: #ffdc00;
+  margin-bottom: 1rem;
+}
+.sucursales-texto h2 {
+  font-size: 3rem;
+}
+
+.sucursales-container .sucursal {
+  position: relative;
+  text-align: center;
+}
+.sucursales-container .sucursal h2 {
+  position: absolute;
+  color: floralwhite;
+  right: 0;
+  left: 0;
+  top: 50%;
+  font-size: 3rem;
+}
+@media all and (min-width: 715px) {
+  .sucursales-container .sucursal {
+    width: 100%;
+  }
+  .sucursales-container .sucursal img {
+    max-height: 550px;
+    object-fit: cover;
+  }
+  .sucursales-container .sucursal h2 {
+    font-size: 5rem;
+  }
+}
+@media all and (min-width: 1024px) {
+  .sucursales-container {
+    display: flex;
+  }
+  .sucursales-container .sucursal img {
+    height: 100%;
+  }
+}
+
+.footer-principal {
+  background: #000;
+  color: #fff;
+  padding: 5rem;
+  text-align: center;
+}
+@media all and (min-width: 715px) {
+  .footer-principal p {
+    font-size: 1.1rem;
   }
 }
 

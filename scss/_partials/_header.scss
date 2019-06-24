@@ -1,7 +1,9 @@
 header {
   padding-top: 3rem;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo {
@@ -20,6 +22,11 @@ header {
   .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 0;
   }
 }
 
