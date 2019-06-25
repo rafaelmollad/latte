@@ -62,7 +62,7 @@ img {
 }
 .portada header {
   padding-top: 3rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -85,6 +85,11 @@ img {
   }
   .portada .logo {
     margin-bottom: 0;
+  }
+}
+@media all and (min-width: 1024px) {
+  .portada header {
+    position: fixed;
   }
 }
 .portada #nav-principal ul {
@@ -131,10 +136,21 @@ img {
   font-size: 1.2rem;
   display: inline-block;
   transition: all 0.5s ease;
-}
-.portada #texto-portada a:hover {
   background: #000;
   border-color: #000;
+}
+@media all and (min-width: 1024px) {
+  .portada #texto-portada h2 {
+    font-size: 4rem;
+  }
+  .portada #texto-portada a {
+    background: transparent;
+    border: 2px solid floralwhite;
+  }
+  .portada #texto-portada a:hover {
+    background: #000;
+    border-color: #000;
+  }
 }
 
 .sobre-nosotros {
