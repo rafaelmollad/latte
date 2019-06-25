@@ -1,6 +1,6 @@
 header {
   padding-top: 3rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -27,6 +27,12 @@ header {
 
   .logo {
     margin-bottom: 0;
+  }
+}
+
+@include desktop {
+  header {
+    position: fixed;
   }
 }
 
