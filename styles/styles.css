@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "mochaMattari";
 }
@@ -90,6 +94,12 @@ img {
 @media all and (min-width: 1024px) {
   .portada header {
     position: fixed;
+    transition: all 0.5s ease;
+  }
+  .portada .black-header {
+    background: #000;
+    padding: 1rem 0;
+    z-index: 999;
   }
 }
 .portada #nav-principal ul {
